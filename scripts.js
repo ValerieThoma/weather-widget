@@ -31,7 +31,7 @@ $(document).ready(()=>{
 				max: weatherData.main.temp_max,
 				min: weatherData.main.temp_min,
 			}
-			var watch = `<img src="watch.png" width="500"/>`
+			var watch = `<a href="https://imperativetv.blogspot.com"><img src="watch.png" width="500"/></a>`
 			var humidity = weatherData.main.humidity;
 			var sunrise = weatherData.sys.sunrise;
 			var sunset = weatherData.sys.sunset;
@@ -39,12 +39,13 @@ $(document).ready(()=>{
 			var set = timeConverter(sunset); 
 			var name = weatherData.name;
 			var icon = weatherData.weather[0].icon;
-			var newHTML = `<div><img src="http://openweathermap.org/img/w/${icon}.png">The temperature in ${name} is currently ${currTemp}&deg</div>`
-			newHTML += `<div>The daily high is ${temps.max}&deg</div>`
-			newHTML += `<div>The daily low is ${temps.min}&deg</div>`
-			newHTML += `<div>Today the sun rises at ${rise}</div>`
-			newHTML += `<div>Today the sun sets at ${set}</div>`
-			newHTML += `<div>Yuck, the humidity is ${humidity}% today</div>`
+			var newHTML = `<div><img src="http://openweathermap.org/img/w/${icon}.png">They tell me I'm in ${name}, it is currently ${currTemp}&deg</div>`
+			newHTML += `<div>They want you to think the high is ${temps.max}&deg.</div>`
+			newHTML += `<div>They want you to think the low is ${temps.min}&deg.</div>`
+			newHTML += `<div>Darlene always like to watch the sun rise. I thought of her today at ${rise}.</div>`
+			newHTML += `<div>When the sun sets at ${set} today, I know they will be watching me.</div>`
+			newHTML += `<div>They want you to believe ${humidity}% humidity is normal.</div>`
+			newHTML += `<div>None of this really matters, does it?</div>`
 			newHTML += `<div>${watch}</div>`
 			$('#temp-info').html(newHTML);
 		});
