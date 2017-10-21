@@ -42,7 +42,7 @@ $(document).ready(()=>{
 			var newHTML = `<div><img src="http://openweathermap.org/img/w/${icon}.png">They tell me I'm in ${name}, it is currently ${currTemp}&deg</div>`
 			newHTML += `<div>They want you to think the high is ${temps.max}&deg.</div>`
 			newHTML += `<div>They want you to think the low is ${temps.min}&deg.</div>`
-			newHTML += `<div>Darlene always like to watch the sun rise. I thought of her today at ${rise}.</div>`
+			newHTML += `<div>Shayla always like to watch the sun rise. I thought of her today at ${rise}.</div>`
 			newHTML += `<div>When the sun sets at ${set} today, I know they will be watching me.</div>`
 			newHTML += `<div>They want you to believe ${humidity}% humidity is normal.</div>`
 			newHTML += `<div>None of this really matters, does it?</div>`
